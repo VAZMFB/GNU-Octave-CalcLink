@@ -265,10 +265,10 @@ classdef CalcLink < handle
             if(~iscell(data))
                 data = {data};
             end
+            Sheet = invoke(self.Sheets, 'getByIndex', sheet-1);
             for i = 1:length(row)
               if(isnumeric(col) && isnumeric(row) && ...
                   all(col > 0) && all(row > 0))
-                Sheet = invoke(self.Sheets, 'getByIndex', sheet-1);
                 Cell = invoke(Sheet, 'getCellByPosition', col(i)-1, ...
                   row(i)-1);
                 invoke(Cell, 'setFormula', data{i});
@@ -297,10 +297,10 @@ classdef CalcLink < handle
       if(self.opened)
         if(isnumeric(sheet) && sheet > 0 && sheet <= self.SheetNum)
           if(length(col) == length(row))
+            Sheet = invoke(self.Sheets, 'getByIndex', sheet-1);
             for i = 1:length(row)
               if(isnumeric(col) && isnumeric(row) && ...
                   all(col > 0) && all(row > 0))
-                Sheet = invoke(self.Sheets, 'getByIndex', sheet-1);
                 Cell = invoke(Sheet, 'getCellByPosition', col(i)-1, ...
                   row(i)-1);
                 data{i}.Value = invoke(Cell, 'getValue');
@@ -435,10 +435,10 @@ classdef CalcLink < handle
               @(x) isnumeric(x) && length(x)==4);
             p.parse(varargin{:})
           
+            Sheet = invoke(self.Sheets, 'getByIndex', sheet-1);
             for i = 1:length(row)
               if(isnumeric(col) && isnumeric(row) && ...
                   all(col > 0) && all(row > 0))
-                Sheet = invoke(self.Sheets, 'getByIndex', sheet-1);
                 Cell = invoke(Sheet, 'getCellByPosition', col(i)-1, ...
                   row(i)-1);
                 
