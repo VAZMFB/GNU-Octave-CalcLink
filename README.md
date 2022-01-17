@@ -8,9 +8,12 @@ GNU Octave class `CalcLink` makes it possible to communicate with and control th
 
 ## Requirements
 [GNU Octave](https://www.gnu.org/software/octave/)<br>
+[Microsoft Windows](https://www.microsoft.com/en-us/windows)<br>
 [LibreOffice](https://www.libreoffice.org/)<br>
 
-Provided code is tested with **GNU Octave 6.4.0** and **LibreOffice 7.2.4**.
+Code relies on ActiveX which is available only on Windows operating systems.
+
+Provided code is tested with **GNU Octave 6.4.0**, **LibreOffice 7.2.4** and **Windows 10 20H2**.
 
 ## Usage
 
