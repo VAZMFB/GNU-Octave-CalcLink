@@ -3,7 +3,7 @@
 GNU Octave class `CalcLink` makes it possible to communicate with and control the LibreOffice Calc program from GNU Octave, including reading and writing operations but also formatting. This way it is possible to create well-formatted tabular reports from GNU Octave using LibreOffice Calc.
 
 <p align="center">
-  <img src="https://vazmfb.com/web/img/github/CalcLink.png" width="800">
+  <img src="https://milospetrasinovic.com/web/img/vazmfb-github/CalcLink.png" width="800">
 </p>
 
 ## Requirements
@@ -20,7 +20,7 @@ Provided code is tested with **GNU Octave 6.4.0**, **LibreOffice 7.2.4** and **W
 For usage please check provided examples. 
 
 ## License
-Copyright (C) 2021 Miloš Petrašinović <info@vazmfb.com>
+Copyright (C) 2021 Miloš Petrašinović <mpetrasinovic@mas.bg.ac.rs>
  
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as 
